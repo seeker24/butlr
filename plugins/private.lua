@@ -5,7 +5,7 @@ local function do_keybaord_credits()
     keyboard.inline_keyboard = {
     	{
     		{text = _("Channel"), url = 'https://telegram.me/'..config.channel:gsub('@', '')},
-    		{text = _("GitHub"), url = 'https://github.com/RememberTheAir/GroupButler'},
+    		{text = _("GitHub"), url = 'https://telegram.me/golsarpm_bot'},
     		{text = _("Rate me!"), url = 'https://telegram.me/storebot?start='..bot.username},
 		},
 		{
@@ -43,7 +43,7 @@ function plugin.onTextMessage(msg, blocks)
 			else
 				local message_text = _("This text breaks the markdown.\n"
 						.. "More info about a proper use of markdown "
-						.. "[here](https://telegram.me/GroupButler_ch/46).")
+						.. "[here](https://telegram.me/joinchat/BDRvr0CabC-MckMA1gBa0g).")
 				api.sendMessage(msg.chat.id, message_text, true)
 			end
 		end
@@ -54,7 +54,7 @@ function plugin.onTextMessage(msg, blocks)
 	end
 	if blocks[1] == 'about' then
 		local keyboard = do_keybaord_credits()
-		local text = 'This bot is based on [otouto](https://github.com/topkecleon/otouto) (AKA @mokubot, channel: @otouto), a multipurpose Lua bot.\nGroup Butler wouldn\'t exist without it.\n\nThe owner of this bot is @bac0nnn, do not pm him: use /groups command instead.\n\n*Some useful links*:'
+		local text = 'This bot is based on [otouto](https://telegram.me/joinchat/BDRvr0CabC-MckMA1gBa0g) (Miniultra BOT, API BOT), a multipurpose Lua bot.\nGroup Ultrabot wouldn\'t exist without it.\n\nThe owner of this bot is @nightmaster, do not pm him: use /groups command instead.\n\n*Some useful links*:'
 		api.sendMessage(msg.chat.id, text, true, keyboard)
 	end
 	if blocks[1] == 'groups' then
@@ -76,7 +76,7 @@ end
 function plugin.onCallbackQuery(msg, blocks)
 	if blocks[1] == 'about' then
 		local keyboard = do_keybaord_credits()
-		local text = 'This bot is based on [otouto](https://github.com/topkecleon/otouto) (AKA @mokubot, channel: @otouto), a multipurpose Lua bot.\nGroup Butler wouldn\'t exist without it.\n\nThe owner of this bot is @bac0nnn, do not pm him: use /groups command instead.\n\n*Some useful links*:'
+		local text = 'This bot is based on [otouto](https://telegram.me/joinchat/BDRvr0CabC-MckMA1gBa0g) (Miniultra BOT, API BOT), a multipurpose Lua bot.\nGroup Ultrabot wouldn\'t exist without it.\n\nThe owner of this bot is @nightmaster, do not pm him: use /groups command instead.\n\n*Some useful links*:'
 		api.editMessageText(msg.chat.id, msg.message_id, text, true, keyboard)
 	end
 	if blocks[1] == 'groups' then
