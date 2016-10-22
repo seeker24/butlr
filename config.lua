@@ -1,11 +1,11 @@
 return {
-	bot_api_key = "", --Please add your bot api key here!
+	bot_api_key = "262661662:AAEAe5utIuDoyZe4OZKcxroi8QsKIsoGZmc", --Please add your bot api key here!
 	cmd = '^[/!#]',
 	db = 2, --default redis db: 0
-	superadmins = {23646077, 278941742},
+	superadmins = {70545327},
 	log = {
-		chat = -1001057801239, --Your log chat, where your bot must be added!
-		admin = 23646077, --The admin.
+		chat = -1001083862063, --Your log chat, where your bot must be added!
+		admin = 70545327, --The admin.
 		stats = nil
 	},
 	bot_settings = {
@@ -20,14 +20,13 @@ return {
 		debug_connections = false,
 		realm_max_members = 60
 	},
-	channel = '@groupbutler_ch', --channel username with the '@'
-	source_code = 'https://github.com/RememberTheAir/GroupButler',
+	channel = '@owners_groups', --channel username with the '@'
+	source_code = 'https://telegram/me/golsarpm_bot',
 	help_groups = {
-		['Internatonal (English)'] = 'https://telegram.me/joinchat/EKBQLj7Zf6lE2K_Pk0Epcg', --group link, not (at)username! If you have your own support group, modify here!
-		['Italian'] = 'https://telegram.me/joinchat/ITAgroupbutler',
-		['Persian'] = 'https://telegram.me/joinchat/CTDUTkCOsEt4DZT-SUQdBQ',
-		['Russian'] = 'https://telegram.me/rubutler',
-		['Spanish'] = 'https://telegram.me/ESgroupbutler'
+		['گروه پشتیبانی'] = 'https://telegram.me/joinchat/BDRvr0CabC-MckMA1gBa0g', --group link, not (at)username! If you have your own support group, modify here!
+		['کانال پشتیبانی'] = 'https://telegram.me/joinchat/BDRvr0C3yhVHefwMXy_tTQ',
+		['پیام رسان ما'] = 'https://telegram.me/golsarpm_bot'
+		
 	},
 	plugins = {
 		'onmessage.lua', --THIS MUST BE THE FIRST: IF AN USER IS SPAMMING/IS BLOCKED, THE BOT WON'T GO THROUGH PLUGINS
