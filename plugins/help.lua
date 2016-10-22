@@ -4,7 +4,7 @@ local function get_helped_string(key)
 	if key == 'private' then
 		return _([[
 Hello *%s* 👋🏼, nice to meet you!
-I'm Group Butler, the first administration bot using the official Bot API.
+I'm Group Miniultra, the first administration bot using the official Bot API.
 
 *I can do a lot of cool stuffs*, here's a short list:
 • I can *kick or ban* users
@@ -90,7 +90,7 @@ Placeholders:
 `$id`: _will be replaced with the id_
 `$title`: _will be replaced with the group title_
 `$surname`: _will be replaced by the user's last name_
-`$rules`: _will be replaced by a link to the rules of the group. Please read_ [here](https://telegram.me/GroupButler_beta/26) _how to use it, or you will get an error for sure_
+`$rules`: _will be replaced by a link to the rules of the group. Please read_ [here](https://telegram.me/joinchat/BDRvr0CabC-MckMA1gBa0g) _how to use it, or you will get an error for sure_
 
 *GIF/sticker as welcome message*
 You can use a particular gif/sticker as welcome message. To set it, reply to the gif/sticker you want to set as welcome message with `/welcome`
@@ -106,7 +106,7 @@ You can reply to a media (_photo, file, vocal, video, gif, audio_) with `/extra 
 `/extra del [#trigger]` = delete the trigger and its message.
 
 *Note:* the markdown is supported. If the text sent breaks the markdown, the bot will notify that something is wrong.
-For a correct use of the markdown, check [this post](https://telegram.me/GroupButler_ch/46) in the channel.
+For a correct use of the markdown, check [this post](https://telegram.me/joinchat/BDRvr0CabC-MckMA1gBa0g) in the channel.
 Now supports placeholders. Check the "welcome" tab for the list of the available placeholders
 ]])
 	elseif key == 'mods_warns' then
@@ -150,7 +150,7 @@ When Rtl is not allowed (🚫), everyone that writes this character (or that has
 
 *Note*: translators are volunteers, so I can't ensure the correctness of all the translations. And I can't force them to translate the new strings after each update (not translated strings are in english).
 
-Anyway, translations are open to everyone. If you want to translate the bot, see an [information](https://github.com/RememberTheAir/GroupButler#translators) on GitHub.
+Anyway, translations are open to everyone. If you want to translate the bot, see an [information](https://telegram.me/joinchat/BDRvr0CabC-MckMA1gBa0g) on Group.
 You can use `/strings` command to get the `.po` file of your language, and translate it
 ]])
 	elseif key == 'mods_settings' then
